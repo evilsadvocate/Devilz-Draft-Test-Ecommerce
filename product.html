@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="It is a ecommerce website by the name devilz draft"
+    />
+    <title>DeVil'Z Draft</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Italianno&family=Oleo+Script&family=Playfair+Display&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <i id="menu-icon" class="fa-solid fa-circle-chevron-down"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Log-In</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Log-Out</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-icon"
+              src="images/profile.jpg"
+              alt="Profile Image"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list brand__name">
+          <a href="index.html" class="nav-brand nav__link">DeVil'Z Draft</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link cart-link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart : 2 Products - $69.70
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar ends here  -->
+    <main class="flex-center">
+      <div class="main-content">
+        <section class="product__details flex-center">
+          <div class="product__details-left flex-center">
+            <img src="images/product1.jpg" alt="Product 1" />
+          </div>
+          <div class="product__details-right">
+            <h3 class="product__name">Apple Airpods Pro</h3>
+            <p>
+              <span class="dot purple"></span>
+              <span class="dot pink"></span>
+              <span class="dot blue"></span>
+            </p>
+            <strong>Drescription: </strong>
+            <p class="product__desc">
+              Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Vero aliquid dolore voluptatem nam dolorem odio
+              repudiandae nulla molestiae aperiam facilis? amet consectetur
+              adipisicing elit. Laborum provident excepturi omnis dolore quod
+              harum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+              deserunt obcaecati quasi nobis sint aliquid totam harum, ipsam
+              laboriosam quam incidunt facere? Corporis voluptatum esse sit
+              voluptates porro error in!
+            </p>
+            <h4 class="product__category">Category: AirBuds Pro</h4>
+            <h4 class="product__price">$289</h4>
+            <p class="product__rating">Rating: 4/5</p>
+            <button class="btn product__btn">Add To Cart</button>
+            <button class="btn product__btn">Back To Shopping</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Be Our Friend :</label>
+        <input
+          type="email"
+          class="footer__input"
+          id="subscribe"
+          name="subscribe"
+          placeholder="Enter You'r Email Here"
+        />
+        <button class="btn btn-subscribe">Join Us</button>
+      </div>
+      <div class="footer-desc">
+        <p>&copy DeVil'Z Draft 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer ends here  -->
+
+    <script src="./Scripts/index.js"></script>
+  </body>
+</html>

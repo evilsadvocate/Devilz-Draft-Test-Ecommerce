@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="It is a ecommerce website by the name devilz draft"
+    />
+    <title>DeVil'Z Draft</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Italianno&family=Josefin+Sans&family=Oleo+Script&family=Playfair+Display&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <i id="menu-icon" class="fa-solid fa-circle-chevron-down"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Log-In</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Log-Out</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-icon"
+              src="images/profile.jpg"
+              alt="Profile Image"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list brand__name">
+          <a href="index.html" class="nav-brand nav__link">DeVil'Z Draft</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link cart-link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart : 2 Products - $69.70
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- header starts here  -->
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee class="banner__title" behavior="" direction=""
+          >Flash Sales Going On</marquee
+        >
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck-fast feature__icon"></i>
+            <h3>Fast Shipping Within 5 Days</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-solid fa-headset feature__icon"></i>
+            <h3>24/7 Customer Support</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-regular fa-credit-card feature__icon"></i>
+            <h3>100% Safe Payment Method</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- header ends here  -->
+    <!-- main starts here  -->
+    <main class="flex-center">
+      <div class="sidebar">
+        <section class="section-categories side">
+          <h3 class="section-title">Categories</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="flashsales">
+                <input
+                  type="checkbox"
+                  name="flashsales"
+                  id="flashsales"
+                  value="flashsales"
+                />
+                Flash Sales
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="phone">
+                <input type="checkbox" name="phone" id="phone" value="phone" />
+                Mobile Phone
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="tablets">
+                <input
+                  type="checkbox"
+                  name="tablets"
+                  id="tablets"
+                  value="tablets"
+                />
+                Tablets
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="menscloth">
+                <input
+                  type="checkbox"
+                  name="menscloth"
+                  id="menscloth"
+                  value="menscloth"
+                />
+                Men's Cloth
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="womenscloth">
+                <input
+                  type="checkbox"
+                  name="womenscloth"
+                  id="womenscloth"
+                  value="womenscloth"
+                />
+                Women's Cloth
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="accesories">
+                <input
+                  type="checkbox"
+                  name="accesories"
+                  id="accesories"
+                  value="accesories"
+                />
+                Accesories
+              </label>
+            </li>
+
+            <li class="list__item">
+              <label for="furniture">
+                <input
+                  type="checkbox"
+                  name="furniture"
+                  id="furniture"
+                  value="furniture"
+                />
+                Furniture
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="section-pricing side">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="price1">
+                <input type="radio" name="price1" id="price1" value="[0,20]" />
+                $0 - $20
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price2">
+                <input
+                  type="radio"
+                  name="price2"
+                  id="price2"
+                  value="[21,100]"
+                />
+                $21 - $100
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price3">
+                <input
+                  type="radio"
+                  name="price3"
+                  id="price3"
+                  value="[101,200]"
+                />
+                $101 - $200
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price4">
+                <input
+                  type="radio"
+                  name="price4"
+                  id="price4"
+                  value="[201,500]"
+                />
+                $201 - $500
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price5">
+                <input
+                  type="radio"
+                  name="price5"
+                  id="price5"
+                  value="[501,1500]"
+                />
+                $500+
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="section-shipping side">
+          <h3 class="section-title">Shipping</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="free">
+                <input type="radio" name="free" id="free" value="free" />
+                Free
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="paid">
+                <input type="radio" name="paid" id="paid" value="paid" />
+                Paid
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="action__sort">
+            <label for="sort">Sort By: </label>
+            <select name="sort" id="sort">
+              <option value="arrival">Newest Arrivals</option>
+              <option value="sold">Most Selling</option>
+              <option value="discount">Biggest Discounts</option>
+              <option value="price">Cheapest Products</option>
+              <option value="Rating">Most Rated Products</option>
+            </select>
+          </div>
+          <div class="action__search">
+            <input type="text" placeholder="Search Product" />
+            <button class="btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- product section starts here  -->
+        <section class="products">
+          <article class="product card">
+            <div class="badge">
+              <span>99 In Stock</span>
+              <hr class="hr-design" />
+              <span>200 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product1.jpg"
+              alt="Product 1"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Apple Airpods Pro</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$289</h4>
+              <p class="product__rating">Rating: 4/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>35 In Stock</span>
+              <hr class="hr-design" />
+              <span>16 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product2.jpg"
+              alt="Product 2"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Samsung S23 Ultra</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$800</h4>
+              <p class="product__rating">Rating: 5/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>120 In Stock</span>
+              <hr class="hr-design" />
+              <span>70 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product3.jpg"
+              alt="Product 3"
+            />
+            <div class="product__body">
+              <h3 class="product__name">18k Pure Diamond Ring</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$2400</h4>
+              <p class="product__rating">Rating: 3/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>70 In Stock</span>
+              <hr class="hr-design" />
+              <span>57 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product4.jpg"
+              alt="Product 4"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Banana</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$10</h4>
+              <p class="product__rating">Rating: 4/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>300 In Stock</span>
+              <hr class="hr-design" />
+              <span>190 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product5.jpg"
+              alt="Product 5"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Asus Gaming Mouse</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$250</h4>
+              <p class="product__rating">Rating: 5/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>29 In Stock</span>
+              <hr class="hr-design" />
+              <span>80 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product6.jpg"
+              alt="Product 6"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Rayban Sunglass</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$230</h4>
+              <p class="product__rating">Rating: 2/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>99 In Stock</span>
+              <hr class="hr-design" />
+              <span>200 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product7.jpg"
+              alt="Product 7"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Louis Vuitton</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$289</h4>
+              <p class="product__rating">Rating: 4/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>35 In Stock</span>
+              <hr class="hr-design" />
+              <span>16 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product8.jpg"
+              alt="Product 8"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Beautiful Glass Bottles</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$800</h4>
+              <p class="product__rating">Rating: 5/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>120 In Stock</span>
+              <hr class="hr-design" />
+              <span>70 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product9.jpg"
+              alt="Product 9"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Nintendo Switch Pro</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$400</h4>
+              <p class="product__rating">Rating: 3/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>70 In Stock</span>
+              <hr class="hr-design" />
+              <span>57 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product10.jpg"
+              alt="Product 10"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Banana</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$10</h4>
+              <p class="product__rating">Rating: 4/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>300 In Stock</span>
+              <hr class="hr-design" />
+              <span>190 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product11.jpg"
+              alt="Product 11"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Crystal Watch</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$250</h4>
+              <p class="product__rating">Rating: 5/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>29 In Stock</span>
+              <hr class="hr-design" />
+              <span>80 Sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product12.jpg"
+              alt="Product 12"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Nike Outdoor</h3>
+              <p>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot blue"></span>
+              </p>
+              <p class="product__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                provident excepturi omnis dolore quod harum...
+                <a class="details" href="product.html">Details</a>
+              </p>
+              <h4 class="product__price">$230</h4>
+              <p class="product__rating">Rating: 4/5</p>
+              <button class="btn product__btn">Add To Cart</button>
+            </div>
+          </article>
+        </section>
+        <!-- products section ends here  -->
+
+        <!-- pagination starts here  -->
+        <div class="pagination">
+          <button class="btn btn__pagination">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="btn btn__pagination">2</button>
+          <button class="btn btn__pagination">3</button>
+          <button class="btn btn__pagination">4</button>
+          <button class="btn btn__pagination">5</button>
+          <button class="btn btn__pagination">6</button>
+          <button class="btn btn__pagination">7</button>
+          <button class="btn btn__pagination">8</button>
+          <button class="btn btn__pagination">9</button>
+          <button class="btn btn__pagination">10</button>
+          <button class="btn btn__pagination">...</button>
+          <button class="btn btn__pagination">50</button>
+          <button class="btn btn__pagination">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- pagination ends here  -->
+      </div>
+    </main>
+    <!-- main ends here  -->
+
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Be Our Friend :</label>
+        <input
+          type="email"
+          class="footer__input"
+          id="subscribe"
+          name="subscribe"
+          placeholder="Enter You'r Email Here"
+        />
+        <button class="btn btn-subscribe">Join Us</button>
+      </div>
+      <div class="footer-desc">
+        <p>&copy DeVil'Z Draft 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer ends here  -->
+
+    <script src="./Scripts/index.js"></script>
+  </body>
+</html>

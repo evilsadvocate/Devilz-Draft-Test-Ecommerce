@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="It is a ecommerce website by the name devilz draft"
+    />
+    <title>DeVil'Z Draft</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Italianno&family=Josefin+Sans&family=Oleo+Script&family=Playfair+Display&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <i id="menu-icon" class="fa-solid fa-circle-chevron-down"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Log-In</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Log-Out</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-icon"
+              src="images/profile.jpg"
+              alt="Profile Image"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list brand__name">
+          <a href="index.html" class="nav-brand nav__link">DeVil'Z Draft</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link cart-link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart : 2 Products - $69.70
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar ends here  -->
+    <main>
+      <section class="section-contact">
+        <h1 class="section-title text-center">Contact Us</h1>
+
+        <div class="contact-container flex-center">
+          <form action="" class="form card">
+            <div class="form-control flex-center">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                required
+                autocomplete="name"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="form-control flex-center">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                required
+                autocomplete="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="form-control flex-center">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Write Your Message"
+              ></textarea>
+            </div>
+            <div class="form-control flex-center form-btn-field">
+              <button class="btn btn-submit" type="submit">Submit</button>
+            </div>
+          </form>
+          <div class="contact-address flex-space-around">
+            <address>
+              <h3>Address:</h3>
+              <p>156 Tamabil</p>
+              <p>Sylhet, Bangladesh</p>
+              <span>Call:</span>
+              <a href="tel:+01735310698">+01735310698</a>
+            </address>
+            <iframe
+              class="contact__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28889.96820556182!2d91.99015605233802!3d25.16116931416458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375044bd7d747f47%3A0xef2b6cb5bcade375!2sJaflong!5e0!3m2!1sen!2sbd!4v1676644542304!5m2!1sen!2sbd"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Be Our Friend :</label>
+        <input
+          type="email"
+          class="footer__input"
+          id="subscribe"
+          name="subscribe"
+          placeholder="Enter You'r Email Here"
+        />
+        <button class="btn btn-subscribe">Join Us</button>
+      </div>
+      <div class="footer-desc">
+        <p>&copy DeVil'Z Draft 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer ends here  -->
+
+    <script src="./Scripts/index.js"></script>
+  </body>
+</html>

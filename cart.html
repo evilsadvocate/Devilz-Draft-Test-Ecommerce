@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="It is a ecommerce website by the name devilz draft"
+    />
+    <title>DeVil'Z Draft</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Italianno&family=Josefin+Sans&family=Oleo+Script&family=Playfair+Display&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <i id="menu-icon" class="fa-solid fa-circle-chevron-down"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Log-In</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Log-Out</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-icon"
+              src="images/profile.jpg"
+              alt="Profile Image"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list brand__name">
+          <a href="index.html" class="nav-brand nav__link">DeVil'Z Draft</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link cart-link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart : 2 Products - $69.70
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar ends here  -->
+    <main>
+      <div class="cart flex-center">
+        <div class="cart__items">
+          <div class="cart__items-heading card">
+            <h2>Shopping Cart [3 Items]</h2>
+            <div class="cart__items-action">
+              <label for="select">
+                <input type="checkbox" name="select" id="select" />
+                Select All Items
+              </label>
+              <button class="cart__btn-delete btn">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <button class="cart__btn btn">
+                Shop More <i class="fa-solid fa-gift"></i>
+              </button>
+            </div>
+          </div>
+          <div class="cart__item card flex-space-around">
+            <input type="checkbox" name="select" id="select" />
+            <img
+              class="cart__item-img"
+              src="images/product3.jpg"
+              alt="Product 3"
+            />
+            <div class="cart__item-desc">
+              <h3 class="product__name">18K Diamond Ring</h3>
+              <h4 class="product__price">Price: $2400</h4>
+              <p class="cart__item-shipping">Free Shipping</p>
+            </div>
+            <div class="cart__items-actions">
+              <button class="btn cart__btn-delete">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <div>
+                <button class="btn">
+                  <i class="fa-solid fa-square-minus"></i>
+                </button>
+                <span class="item-num">1</span>
+                <button class="btn">
+                  <i class="fa-solid fa-square-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item card flex-space-around">
+            <input type="checkbox" name="select" id="select" />
+            <img
+              class="cart__item-img"
+              src="images/product7.jpg"
+              alt="Product 7"
+            />
+            <div class="cart__item-desc">
+              <h3 class="product__name">Louis Vuitton</h3>
+              <h4 class="product__price">Price: $289</h4>
+              <p class="cart__item-shipping">+ Shipping Cost $3.70</p>
+            </div>
+            <div class="cart__items-actions">
+              <button class="btn cart__btn-delete">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <div>
+                <button class="btn">
+                  <i class="fa-solid fa-square-minus"></i>
+                </button>
+                <span class="item-num">1</span>
+                <button class="btn">
+                  <i class="fa-solid fa-square-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item card flex-space-around">
+            <input type="checkbox" name="select" id="select" />
+            <img
+              class="cart__item-img"
+              src="images/product12.jpg"
+              alt="Product 12"
+            />
+            <div class="cart__item-desc">
+              <h3 class="product__name">Nike Outdoor</h3>
+              <h4 class="product__price">Price: $230</h4>
+              <p class="cart__item-shipping">+ Shipping Cost $2.30</p>
+            </div>
+            <div class="cart__items-actions">
+              <button class="btn cart__btn-delete">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <div>
+                <button class="btn">
+                  <i class="fa-solid fa-square-minus"></i>
+                </button>
+                <span class="item-num">1</span>
+                <button class="btn">
+                  <i class="fa-solid fa-square-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__payment">
+          <div class="cart__payment-summary card">
+            <h2>Payment Summary</h2>
+            <div>
+              <p>Subtotal:</p>
+              <p>$9999</p>
+            </div>
+            <hr class="dotted-hr" />
+            <div>
+              <p>Shipping Cost:</p>
+              <p>$15</p>
+            </div>
+            <hr class="dotted-hr" />
+            <div>
+              <p>Total Cost:</p>
+              <p>$9999</p>
+            </div>
+            <button class="btn__payment btn">Pay Now</button>
+          </div>
+          <div class="cart__payment-methods card">
+            <h2>Payment Methods</h2>
+            <div>
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-paypal"></i>
+              <i class="fa-brands fa-cc-amex"></i>
+              <i class="fa-brands fa-apple-pay"></i>
+              <i class="fa-brands fa-google-pay"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Be Our Friend :</label>
+        <input
+          type="email"
+          class="footer__input"
+          id="subscribe"
+          name="subscribe"
+          placeholder="Enter You'r Email Here"
+        />
+        <button class="btn btn-subscribe">Join Us</button>
+      </div>
+      <div class="footer-desc">
+        <p>&copy DeVil'Z Draft 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer ends here  -->
+
+    <script src="./Scripts/index.js"></script>
+  </body>
+</html>
